@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do |a|
+    Skill.create!(name: "this is the #{a+1} skill.",
+        percentage: a
+        )
+end
+
+5.times do |b|
+    Blog.create!(title: "it's the #{b} blog.",
+        body: "it's the body #{b*3} part."
+        )
+end

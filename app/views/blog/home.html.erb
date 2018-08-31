@@ -1,0 +1,13 @@
+<h1>Blog#home</h1>
+<p>Find me in app/views/blog/home.html.erb</p>
+
+
+<h1>Pages</h1>
+<%= @pages.first.title %><br>
+<%= @pages.first.body %>
+
+<h1>Skills</h1>
+<% @skills.each do |t| %>
+<%= t.name %>
+<%= t.percentage %><br>
+<% end %>
